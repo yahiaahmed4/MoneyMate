@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="userprofileRowModel" type="com.tasneemsapplication.app.modules.finances.data.model.UserprofileRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearUserprofile"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/_5pxv"
+        android:paddingEnd="@dimen/_10pxh"
+        android:paddingStart="@dimen/_10pxh"
+        android:paddingTop="@dimen/_5pxv" style="@style/groupStyleblue_gray_100cornerRadius">
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearColumnvalu"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4pxv"
+            android:layout_width="wrap_content" android:orientation="vertical">
+            <TextView android:ellipsize="end" android:id="@+id/txtValu"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:lineSpacingExtra="@dimen/_2pxh"
+                android:singleLine="true"
+                android:text="@{userprofileRowModel.txtValu}"
+                style="@style/txtArialmt12" tools:text="@string/lbl_valu"/>
+            <TextView android:ellipsize="end" android:id="@+id/txtTime"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_3pxh"
+                android:layout_width="wrap_content"
+                android:lineSpacingExtra="@dimen/_2pxh"
+                android:singleLine="true"
+                android:text="@{userprofileRowModel.txtTime}"
+                style="@style/txtArialmt10_1" tools:text="@string/lbl_12_22_pm"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtAmount"
+            style="@style/txtArialboldmt10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4pxv"
+            android:layout_marginBottom="@dimen/_12pxv"
+            android:ellipsize="end"
+            android:lineSpacingExtra="@dimen/_2pxh"
+            android:singleLine="true"
+            android:text="@{userprofileRowModel.txtAmount}"
+            tools:text="@string/lbl_500_00_egp" />
+    </LinearLayout>
+</layout>

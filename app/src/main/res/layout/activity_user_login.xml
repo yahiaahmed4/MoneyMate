@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout
+
+
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".userLogin"
+
+
+
+    android:id="@+id/linearLoginPage"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/_15pxv"
+    android:paddingEnd="@dimen/_20pxh"
+    android:paddingStart="@dimen/_20pxh"
+    android:paddingTop="@dimen/_15pxv" style="@style/groupStylegreen_A100_01">
+
+    <LinearLayout android:id="@+id/linearColumnundrawlog"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/_63pxv"
+        android:paddingEnd="@dimen/_10pxh"
+        android:paddingStart="@dimen/_10pxh"
+        android:paddingTop="@dimen/_63pxv" style="@style/groupStylewhite_A700cornerRadius">
+        <ImageView android:id="@+id/imageUndrawloginre"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_180pxh"
+            android:layout_marginTop="@dimen/_8pxv"
+            android:layout_width="@dimen/_300pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_undraw_login_re_4vu2"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_undraw_login_re_4vu2"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtLogin"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_32pxv"
+            android:layout_width="wrap_content"
+            android:lineSpacingExtra="@dimen/_3pxh"
+            android:singleLine="true"
+            android:text="LOGIN"
+            style="@style/txtArialmt20" tools:text="LOGIN"/>
+        <EditText
+            android:background="@drawable/rectangle_bg_blue_gray_100_radius_25"
+            android:ellipsize="end"
+            android:hint="Email"
+            android:id="@+id/email_login"
+            android:inputType="text"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_33pxv"
+            android:layout_width="match_parent"
+            android:lineSpacingExtra="@dimen/_3pxh"
+            android:paddingBottom="@dimen/_16pxv"
+            android:paddingEnd="@dimen/_19pxh"
+            android:paddingStart="@dimen/_19pxh"
+            android:paddingTop="@dimen/_16pxv"
+            android:singleLine="true"
+            android:textSize="16dp"
+            android:textColorHint="@color/black_900_8c"
+            style="@style/etSolidRounded_1" tools:ignore="Autofill"/>
+        <EditText
+            android:background="@drawable/rectangle_bg_blue_gray_100_radius_25"
+            android:ellipsize="end"
+            android:hint="@string/lbl_password"
+            android:id="@+id/pass_login"
+            android:inputType="text"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_18pxv"
+            android:layout_width="match_parent"
+            android:lineSpacingExtra="@dimen/_3pxh"
+            android:paddingBottom="@dimen/_16pxv"
+            android:paddingEnd="@dimen/_19pxh"
+            android:paddingStart="@dimen/_19pxh"
+            android:paddingTop="@dimen/_16pxv"
+            android:singleLine="true"
+            android:textSize="16dp"
+            android:textColorHint="@color/black_900_8c"
+            style="@style/etSolidRounded_1" tools:ignore="Autofill"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/button_login_page"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_22pxv"
+            android:layout_width="match_parent"
+            android:lineSpacingExtra="@dimen/_4pxh"
+            android:paddingBottom="@dimen/_10pxv"
+            android:paddingEnd="@dimen/_30pxh"
+            android:paddingStart="@dimen/_30pxh"
+            android:paddingTop="@dimen/_10pxv"
+            android:singleLine="true"
+            android:text="Sign in"
+            android:textAllCaps="false"
+            style="@style/btnSolidRounded_2" tools:text="Sign in"/>
+
+        <TextView
+            android:id="@+id/gotoregister"
+            style="@style/txtArialmt10_1"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/_2pxv"
+            android:layout_marginEnd="@dimen/_4pxh"
+            android:ellipsize="end"
+            android:lineSpacingExtra="@dimen/_2pxh"
+            android:singleLine="true"
+            android:text="don't have an account? Sign Up"
+            android:textSize="16dp"
+            tools:text="don't have an account? Sign Up" />
+    </LinearLayout>
+</LinearLayout>
+

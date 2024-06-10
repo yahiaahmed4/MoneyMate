@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:background="@drawable/logo2"
+tools:context=".addAccount">
+
+
+
+    <LinearLayout android:id="@+id/linearAddFavourite"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/_15pxv"
+        android:paddingEnd="@dimen/_20pxh"
+        android:paddingStart="@dimen/_20pxh"
+        android:paddingTop="@dimen/_15pxv" style="@style/groupStylegreen_A100_01">
+        <LinearLayout android:id="@+id/linearColumnundrawbud"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/_18pxv"
+            android:paddingEnd="@dimen/_9pxh"
+            android:paddingStart="@dimen/_9pxh"
+            android:paddingTop="@dimen/_18pxv" style="@style/groupStylewhite_A700cornerRadius">
+            <ImageView android:id="@+id/imageUndrawbuddies"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_273pxh"
+                android:layout_width="@dimen/_300pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_undraw_buddies_2ae5"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_undraw_buddies_2ae5"/>
+            <EditText
+                android:background="@drawable/rectangle_bg_blue_gray_100_radius_15"
+                android:ellipsize="end"
+                android:hint="Name"
+                android:id="@+id/Name"
+                android:textSize="15dp"
+                android:inputType="text"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="25dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="@dimen/_45pxv"
+                android:layout_width="match_parent"
+                android:paddingBottom="9dp"
+                android:paddingEnd="17dp"
+                android:paddingStart="17dp"
+                android:paddingTop="9dp"
+                android:singleLine="true"
+                android:textColorHint="@color/black_900_8c"
+                style="@style/etSolidRounded"
+                tools:ignore="Autofill"/>
+
+
+
+            <EditText
+                android:background="@drawable/rectangle_bg_blue_gray_100_radius_15"
+                android:ellipsize="end"
+                android:hint="Card Number"
+                android:id="@+id/CardNo"
+                android:textSize="15dp"
+                android:inputType="text"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="25dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="27dp"
+                android:layout_width="match_parent"
+                android:paddingBottom="9dp"
+                android:paddingEnd="17dp"
+                android:paddingStart="17dp"
+                android:paddingTop="9dp"
+                android:singleLine="true"
+                android:textColorHint="@color/black_900_8c"
+                style="@style/etSolidRounded"
+                tools:ignore="Autofill"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end"
+                android:gravity="center"
+                android:id="@+id/btnAddFav"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="34dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="87dp"
+                android:layout_width="match_parent"
+                android:paddingBottom="11dp"
+                android:paddingEnd="16dp"
+                android:paddingStart="16dp"
+                android:paddingTop="11dp"
+                android:singleLine="true"
+                android:textAllCaps="false"
+                android:text="ADD TO FAVOURITES"
+                style="@style/btnSolidRounded_2"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+<com.google.android.material.bottomnavigation.BottomNavigationView
+    android:id="@+id/bottomNavigationView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:labelVisibilityMode="labeled"
+    app:menu="@menu/navmenu"
+    android:layout_alignParentBottom="true"
+    android:background="#E6DEE1" />
+
+</RelativeLayout>

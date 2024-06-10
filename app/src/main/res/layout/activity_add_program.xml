@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/linearAddProgram"
+        tools:context=".add_program"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/_15pxv"
+        android:paddingEnd="@dimen/_20pxh"
+        android:paddingStart="@dimen/_20pxh"
+        android:paddingTop="@dimen/_15pxv" style="@style/groupStylegreen_A100_01">
+        <LinearLayout android:id="@+id/linearColumnundrawbus"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/_38pxv"
+            android:paddingEnd="@dimen/_9pxh"
+            android:paddingStart="@dimen/_9pxh"
+            android:paddingTop="@dimen/_38pxv" style="@style/groupStylewhite_A700cornerRadius">
+            <ImageView android:id="@+id/imageUndrawbusiness"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_175pxh"
+                android:layout_width="@dimen/_300pxh"
+                android:layout_marginTop="70dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_undraw_business_plan_re_0v81"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_undraw_business_plan_re_0v81"/>
+            <TextView
+                android:gravity="start"
+                android:id="@+id/txtDesignyour"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_55pxh"
+                android:layout_marginTop="@dimen/_14pxv"
+                android:layout_width="match_parent"
+                android:lineSpacingExtra="@dimen/_3pxh"
+                android:textSize="20dp"
+                android:text="DESIGN YOUR PROGRAM"
+                />
+            <TextView
+                android:id="@+id/txtYourtotal"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_26pxv"
+                android:layout_width="wrap_content"
+                android:lineSpacingExtra="@dimen/_20pxh"
+                android:textSize="12dp"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+                android:text="YOUR TOTAL BALANCE:"
+                android:textColor="#000000"/>
+            <EditText
+                android:gravity="center"
+                android:id="@+id/balanc"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="35dp"
+                android:layout_marginTop="@dimen/_5pxv"
+                android:layout_marginBottom="10dp"
+                android:layout_width="200dp"
+
+                android:hint="Enter Balance Amount"
+               android:textSize="15dp"
+                android:textAllCaps="false"
+                style="@style/btnSolidRounded"
+                />
+            <TextView
+                android:id="@+id/txtPrice"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5pxv"
+                android:layout_width="wrap_content"
+                android:lineSpacingExtra="@dimen/_20pxh"
+                android:textSize="12dp"
+                android:layout_marginBottom="10dp"
+                android:text="ESSENTIALS BALANCE:"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+            <EditText
+                android:gravity="center"
+                android:id="@+id/essent"
+                android:layout_gravity="center_horizontal"
+                android:lineSpacingExtra="@dimen/_20pxh"
+
+                android:layout_height="35dp"
+                android:layout_marginTop="@dimen/_5pxv"
+                android:layout_marginBottom="10dp"
+                android:layout_width="200dp"
+                android:textSize="15dp"
+
+                android:hint="Enter Essentials Amount"
+                android:textAllCaps="false"
+                style="@style/btnSolidRounded"/>
+            <TextView
+                android:id="@+id/txtPrice1"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:textSize="12dp"
+                android:layout_marginBottom="10dp"
+                android:text="NON-ESSENTIALS BALANCE:"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+            <EditText
+                android:gravity="center"
+                android:id="@+id/nonessent"
+                android:layout_gravity="center_horizontal"
+                android:lineSpacingExtra="@dimen/_20pxh"
+
+                android:layout_height="35dp"
+                android:layout_marginTop="@dimen/_5pxv"
+                android:layout_marginBottom="10dp"
+                android:layout_width="200dp"
+                android:textSize="15dp"
+
+                android:hint="Enter Non-Essentials Amount"
+                android:textAllCaps="false"
+                style="@style/btnSolidRounded"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnAddProg"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_25pxh"
+                android:layout_marginStart="@dimen/_25pxh"
+                android:layout_marginTop="@dimen/_77pxv"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_11pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_11pxv"
+                android:singleLine="true"
+                android:text="DONE"
+                android:textAllCaps="false"
+                style="@style/btnSolidRounded_2"
+                />
+        </LinearLayout>
+    </LinearLayout>
+

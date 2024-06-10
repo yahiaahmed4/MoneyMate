@@ -1,0 +1,57 @@
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/showingEmployeeInfo"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    >
+
+    <!-- Repeat the following section for each employee -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp">
+
+
+        <TextView
+            android:id="@+id/Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textSize="25dp"
+            android:textColor="#126B77"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/Amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Amount"
+            android:textSize="25dp"
+            android:textColor="#126B77"
+            android:layout_below="@id/Name"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/Type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Type"
+            android:textSize="25dp"
+            android:textColor="#126B77"
+            android:layout_below="@id/Amount"
+            android:layout_marginTop="10dp" />
+
+
+
+
+
+        <!-- Additional views or buttons specific to each employee -->
+
+    </RelativeLayout>
+
+</LinearLayout>

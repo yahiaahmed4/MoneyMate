@@ -1,0 +1,8 @@
+<!-- res/values/arrays.xml -->
+<resources>
+    <string-array name="expense_types">
+        <item>Food</item>
+        <item>Bills</item>
+        <item>Taxes</item>
+    </string-array>
+</resources>

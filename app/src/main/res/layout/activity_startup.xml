@@ -1,0 +1,78 @@
+
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".startup"
+
+
+    android:id="@+id/linearColumnundrawMobileOne"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    style="@style/groupStylegreen_A100">
+
+    <FrameLayout
+        android:id="@+id/frameStack"
+        android:layout_width="@dimen/_188pxh"
+        android:layout_height="191dp"
+        android:layout_gravity="start">
+
+        <ImageView
+            android:id="@+id/imageImage"
+            android:src="@drawable/img_ellipse_1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_84pxv"
+            android:layout_gravity="top|center"
+            android:scaleType="fitXY"
+            tools:ignore="ContentDescription"
+            tools:src="@drawable/img_ellipse_1" />
+
+        <ImageView
+            android:id="@+id/imageImageOne"
+            android:src="@drawable/img_ellipse_2"
+            android:layout_width="@dimen/_76pxh"
+            android:layout_height="@dimen/_167pxh"
+            android:layout_gravity="start"
+            android:scaleType="fitXY"
+            tools:ignore="ContentDescription"
+            tools:src="@drawable/img_ellipse_2" />
+    </FrameLayout>
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MONEY MATE"
+        style="@style/Solid"
+        android:gravity="center"
+        />
+    <ImageView
+        android:id="@+id/imageUndrawmobile"
+        android:layout_width="@dimen/_335pxh"
+        android:layout_height="@dimen/_300pxh"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_undraw_mobile_content_xvgr"
+        tools:ignore="ContentDescription"
+        tools:src="@drawable/img_undraw_mobile_content_xvgr" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:ellipsize="end" android:gravity="center"
+        android:id="@+id/btngetstarted"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_22pxv"
+        android:layout_width="wrap_content"
+        android:lineSpacingExtra="@dimen/_4pxh"
+        android:paddingBottom="@dimen/_10pxv"
+        android:paddingEnd="@dimen/_30pxh"
+        android:paddingStart="@dimen/_30pxh"
+        android:paddingTop="@dimen/_10pxv"
+        android:singleLine="true"
+        android:text="@string/lbl_get_started"
+
+        android:textAllCaps="false"
+        style="@style/btnSolid" tools:text="@string/lbl_get_started"/>
+
+</LinearLayout>

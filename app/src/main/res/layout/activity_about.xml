@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rectangle_bg_green_a100_b7_border_black_900_radius_20"
+    >
+
+    <!-- Text Views describing the app idea -->
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Financial Management App"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#132071"
+        android:layout_marginTop="130dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textViewDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to our Financial Management App!\n\nThis app helps you track your spendings, categorize them, and set limits for essential and non-essential expenses. You will receive alerts when you exceed your set limits. Additionally, you can pay bills such as electricity, rent, and more through our app."
+        android:textSize="25sp"
+        android:textColor="#000105"
+        android:textStyle="bold"
+        android:layout_below="@id/textViewTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"/>
+
+
+
+    <!-- Button to navigate back to the main page -->
+    <Button
+        android:id="@+id/buttonBackToMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#25131A" />
+
+
+</RelativeLayout>

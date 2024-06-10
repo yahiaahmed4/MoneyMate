@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".accountinfo"
+
+
+
+    android:id="@+id/linearProfile"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical" style="@style/groupStylegreen_A100_01">
+    <androidx.appcompat.widget.Toolbar
+        android:gravity="center_horizontal"
+        android:id="@+id/toolbarToolbar"
+        android:paddingTop="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_11pxv"
+        android:layout_width="match_parent" app:contentInsetStart="0dp">
+        <LinearLayout android:id="@+id/linearRowlogouticon"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_30pxh"
+            android:layout_marginStart="@dimen/_10pxh"
+            android:layout_width="match_parent" android:orientation="horizontal">
+            <ImageView android:id="@+id/logoutimg"
+                android:layout_height="@dimen/_50pxh"
+                android:layout_marginBottom="@dimen/_25pxv"
+                android:layout_width="@dimen/_50pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_logout_icon"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_logout_icon"/>
+
+
+            <TextView
+                android:id="@+id/username2"
+                style="@style/txtArialmt25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_69pxh"
+                android:layout_marginTop="@dimen/_19pxv"
+                android:layout_marginBottom="@dimen/_25pxv"
+                android:ellipsize="end"
+                android:lineSpacingExtra="@dimen/_4pxh"
+                android:singleLine="true"
+                android:text="Hi, User" />
+
+            <ImageView
+                android:id="@+id/imageUndrawpicOne"
+                android:layout_height="@dimen/_75pxh"
+                android:layout_marginStart="@dimen/_26pxh"
+                android:layout_width="@dimen/_75pxh"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_undraw_pic_profile_re_7g2h"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_undraw_pic_profile_re_7g2h"/>
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <LinearLayout android:gravity="start"
+        android:id="@+id/linearColumnyourbalan"
+        android:layout_marginTop="60dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:paddingEnd="@dimen/_10pxh"
+        android:paddingStart="@dimen/_10pxh" android:paddingTop="@dimen/_16pxv">
+        <TextView android:ellipsize="end"
+            android:id="@+id/balance"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_4pxh"
+            android:layout_width="match_parent"
+            android:lineSpacingExtra="@dimen/_5pxh"
+            android:singleLine="true"
+            style="@style/txtArialboldmt30"
+            android:text="1234 EGP"/>
+        <TextView android:ellipsize="end"
+            android:id="@+id/txtYourbalance"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_width="wrap_content"
+            android:lineSpacingExtra="@dimen/_3pxh"
+            android:singleLine="true"
+            style="@style/txtArialmt15"
+            android:text="YOUR BALANCE"/>
+
+        <LinearLayout
+            android:id="@+id/linearColumncardnumbe"
+            style="@style/groupStylewhite_A700cornerRadius"
+            android:layout_width="match_parent"
+            android:layout_height="429dp"
+            android:layout_marginTop="@dimen/_35pxv"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="@dimen/_8pxh"
+            android:gravity="start"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/_13pxh"
+            android:paddingTop="@dimen/_17pxv"
+            android:paddingEnd="@dimen/_13pxh"
+            android:paddingBottom="@dimen/_17pxv">
+
+            <TextView
+                android:id="@+id/txtCardnumber"
+                style="@style/txtArialmt17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8pxh"
+                android:layout_marginTop="@dimen/_12pxv"
+                android:ellipsize="end"
+                android:lineSpacingExtra="@dimen/_3pxh"
+                android:singleLine="true"
+                android:text="Card Number" />
+
+            <EditText
+                android:id="@+id/cardnumber"
+                style="@style/etSolid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_35pxh"
+                android:layout_marginTop="@dimen/_7pxv"
+                android:layout_marginEnd="@dimen/_21pxh"
+                android:background="@drawable/rectangle_bg_blue_gray_100"
+                android:ellipsize="end"
+                android:text="5445 8123 4294 1034"
+                android:inputType="text"
+                android:lineSpacingExtra="@dimen/_3pxh"
+                android:paddingStart="@dimen/_27pxh"
+                android:paddingTop="@dimen/_7pxv"
+                android:paddingEnd="@dimen/_27pxh"
+                android:paddingBottom="@dimen/_7pxv"
+                android:singleLine="true"
+                android:textColor="@color/black_900"
+                tools:ignore="Autofill" />
+
+            <TextView
+                android:id="@+id/txtPrice1"
+                style="@style/txtArialmt17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20pxv"
+                android:ellipsize="end"
+                android:lineSpacingExtra="@dimen/_3pxh"
+                android:singleLine="true"
+                android:text="ESSENTIALS BALANCE:" />
+
+            <EditText
+                android:id="@+id/essentials"
+                style="@style/etSolid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_35pxh"
+                android:layout_marginTop="@dimen/_11pxv"
+                android:layout_marginEnd="@dimen/_21pxh"
+                android:background="@drawable/rectangle_bg_blue_gray_100"
+                android:ellipsize="end"
+                android:hint="Enter Balance"
+                android:inputType="text"
+                android:lineSpacingExtra="@dimen/_3pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_7pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingBottom="@dimen/_7pxv"
+                android:singleLine="true"
+                android:textColorHint="@color/black_900"
+                tools:ignore="Autofill" />
+
+            <TextView
+                android:id="@+id/txtPrice2"
+                style="@style/txtArialmt17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5pxh"
+                android:layout_marginTop="@dimen/_24pxv"
+                android:ellipsize="end"
+                android:lineSpacingExtra="@dimen/_3pxh"
+                android:singleLine="true"
+                android:text="NON-ESSENTIALS BALANCE:"/>
+
+            <EditText
+                android:id="@+id/nonessentials"
+                style="@style/etSolid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_35pxh"
+                android:layout_marginTop="@dimen/_6pxv"
+                android:layout_marginEnd="@dimen/_21pxh"
+                android:background="@drawable/rectangle_bg_blue_gray_100"
+                android:ellipsize="end"
+                android:hint="Enter Balance"
+                android:inputType="text"
+                android:lineSpacingExtra="@dimen/_3pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_7pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingBottom="@dimen/_7pxv"
+                android:singleLine="true"
+                android:textColorHint="@color/black_900"
+                tools:ignore="Autofill" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/editprofile"
+                style="@style/btnSolidRoundedOutline"
+                android:layout_width="@dimen/_140pxh"
+                android:layout_height="@dimen/_59pxv"
+                android:layout_marginStart="@dimen/_74pxh"
+                android:layout_marginTop="@dimen/_25pxh"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:lineSpacingExtra="@dimen/_4pxh"
+                android:paddingStart="@dimen/_9pxh"
+                android:paddingTop="@dimen/_15pxv"
+                android:paddingEnd="@dimen/_9pxh"
+                android:paddingBottom="@dimen/_15pxv"
+                android:singleLine="true"
+                android:textAllCaps="false"
+                android:text="Edit Profile"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="end"
+
+
+
+        >
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E6DEE1"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/navmenu" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
